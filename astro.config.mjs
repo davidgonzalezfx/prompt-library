@@ -11,5 +11,9 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+
+  build: {
+    out: './dist', // output folder
+  },
 });

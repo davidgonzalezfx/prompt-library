@@ -16,4 +16,6 @@ export default defineConfig({
   build: {
     out: './dist', // output folder
   },
+  site: 'https://davidgonzalezfx.github.io/prompt-library',
+  base: '/prompt-library/',
 });

@@ -32,12 +32,12 @@ const PromptLibrary: React.FC = () => {
 
   return (
     <>
-      <div className="mb-8 flex flex-wrap gap-2">
+      <div className="mb-6 sm:mb-8 flex flex-wrap gap-1.5 sm:gap-2">
         {allTags.map(tag => (
           <button
             key={tag}
             onClick={() => setActiveTag(tag === activeTag ? null : tag)}
-            className={`px-3 py-1 rounded-full text-xs font-medium shadow border transition cursor-pointer
+            className={`px-2 sm:px-3 py-1 rounded-full text-xs font-medium shadow border transition cursor-pointer
               ${tag === activeTag
                 ? 'bg-[#38bdf8] text-[#0f172a] border-[#38bdf8] font-bold'
                 : 'bg-[#334155] text-[#38bdf8] border-[#38bdf8] hover:bg-[#0f172a]'}
@@ -49,13 +49,13 @@ const PromptLibrary: React.FC = () => {
         {activeTag && (
           <button
             onClick={() => setActiveTag(null)}
-            className="px-3 py-1 rounded-full text-xs font-medium shadow border border-[#38bdf8] bg-[#0f172a] text-[#38bdf8] hover:bg-[#334155] transition cursor-pointer"
+            className="px-2 sm:px-3 py-1 rounded-full text-xs font-medium shadow border border-[#38bdf8] bg-[#0f172a] text-[#38bdf8] hover:bg-[#334155] transition cursor-pointer"
           >
             Clear
           </button>
         )}
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-4 sm:gap-6">
         {filteredPrompts.map((prompt, idx) => (
           <PromptCard
             key={idx}

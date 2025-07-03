@@ -1,5 +1,8 @@
 ---
+import Layout from '../components/Layout';
+import PromptLibrary from '../components/PromptLibrary';
 
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -8,9 +11,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Prompt Library</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body className="bg-gray-50">
+		<Layout>
+			<PromptLibrary client:load />
+		</Layout>
 	</body>
 </html>

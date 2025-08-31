@@ -9,11 +9,43 @@ import "../styles/global.css";
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href={import.meta.env.BASE_URL + 'favicon.svg'} />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Prompt Library</title>
+		
+		<!-- SEO Meta Tags -->
+		<title>Prompt Library - AI Prompts by davidgonzalezfx</title>
+		<meta name="description" content="A curated collection of powerful AI prompts to supercharge your productivity and creativity. Explore prompts for learning, productivity, writing, coding, and more." />
+		<meta name="keywords" content="AI prompts, ChatGPT prompts, productivity, learning, coding prompts, writing prompts" />
+		<meta name="author" content="davidgonzalezfx" />
+		
+		<!-- Open Graph / Social Media -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://prompt-library.davidgonzalezfx.com" />
+		<meta property="og:title" content="Prompt Library - AI Prompts by davidgonzalezfx" />
+		<meta property="og:description" content="A curated collection of powerful AI prompts to supercharge your productivity and creativity." />
+		<meta property="og:image" content="https://prompt-library.davidgonzalezfx.com/og-image.png" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://prompt-library.davidgonzalezfx.com" />
+		<meta property="twitter:title" content="Prompt Library - AI Prompts by davidgonzalezfx" />
+		<meta property="twitter:description" content="A curated collection of powerful AI prompts to supercharge your productivity and creativity." />
+		<meta property="twitter:image" content="https://prompt-library.davidgonzalezfx.com/og-image.png" />
+		
+		<!-- Theme Color -->
+		<meta name="theme-color" content="#6d3faa" />
+		<meta name="msapplication-navbutton-color" content="#6d3faa" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<!-- Preload fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+		<!-- Performance optimizations -->
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="mobile-web-app-capable" content="yes" />
 	</head>
-	<body className="bg-gray-50">
+	<body>
 		<Layout>
 			<PromptLibrary client:load />
 		</Layout>

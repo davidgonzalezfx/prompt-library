@@ -1,0 +1,9 @@
+---
+title: prompt engineering
+description: Incluye rol, enfoque, contexto y límites
+---
+Mejora el prompt para incluir rol, enfoque, contexto y límites de acuerdo a esto:
+Rol: quién debe responder. Ejemplo útil: “actúa como [especialista]”. Así mueves el espacio vectorial al área correcta.
+Enfoque o instrucción: qué debe hacer, con claridad y sin adornos. No hace falta pedir favores; sé directo.
+Contexto de la memoria: la información necesaria para resolver. Ejemplo mencionado: el reporte de McKinsey como base; sin eso, no se llega al resultado esperado.
+Límites: cómo debe venir la salida. Define formato y alcance: “resumen”, “corto”, “bullet points”. Evita ambigüedades: especifica número de caracteres, oraciones o palabras. Usa adjetivos accionables: accionable, conciso, pragmático.

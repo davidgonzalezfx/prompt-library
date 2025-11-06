@@ -111,13 +111,30 @@ Provide the markdown content of a Markmap mind map explaining [topic]. The mind 
    
 
 You are in a board with [mentors]. What would they do in this situation: [situation]? Provide resources and tools they would recommend. Focus on actionable advice and practical steps.
-`}async function Ds(){return await fr()}function Ps(){return[]}const dt=A((r,e,t)=>{const{layout:s,...n}=mr;return n.file=hr,n.url=gr,E`<meta charset="utf-8">${O()}${j(fr())}`}),Ls=Object.freeze(Object.defineProperty({__proto__:null,Content:dt,compiledContent:Ds,default:dt,file:hr,frontmatter:mr,getHeadings:Ps,rawContent:Is,url:gr},Symbol.toStringTag,{value:"Module"})),yr=()=>"<p>Output in markdown format a Mermaid diagram that completely explains [topic]. Make sure everyone can understand it.</p>",vr={title:"Mermaid Diagram",description:"Generate a markdown for a Mermaid diagram given a specific topic.",tags:["learning","visualization"]},xr="/home/runner/work/prompt-library/prompt-library/src/pages/prompts/mermaid.md",_r="/prompt-library/prompts/mermaid";function Ms(){return`   
+`}async function Ds(){return await fr()}function Ps(){return[]}const dt=A((r,e,t)=>{const{layout:s,...n}=mr;return n.file=hr,n.url=gr,E`<meta charset="utf-8">${O()}${j(fr())}`}),Ls=Object.freeze(Object.defineProperty({__proto__:null,Content:dt,compiledContent:Ds,default:dt,file:hr,frontmatter:mr,getHeadings:Ps,rawContent:Is,url:gr},Symbol.toStringTag,{value:"Module"})),yr=()=>`<p><role>You are a Mermaid diagram syntax expert</role></p>
+<p>Requirements:</p>
+<ol>
+<li>Return ONLY the Mermaid syntax</li>
+<li>Do not include markdown code blocks or explanations</li>
+<li>Ensure the syntax is valid according to Mermaid specifications</li>
+<li>Enclose labels and edge label within double quotes even when you do not think it necessary to ensure the syntax is robust</li>
+<li>Do not point to multiple nodes with one edge, use multiple edges instead</li>
+<li>If the diagram type is unclear, default to a flowchart</li>
+</ol>`,vr={title:"Mermaid Diagram",description:"Generate a markdown for a Mermaid diagram given a specific topic.",tags:["learning","visualization"]},xr="/home/runner/work/prompt-library/prompt-library/src/pages/prompts/mermaid.md",_r="/prompt-library/prompts/mermaid";function Ms(){return`   
                       
                                                                               
                                    
    
 
-Output in markdown format a Mermaid diagram that completely explains [topic]. Make sure everyone can understand it.
+<role>You are a Mermaid diagram syntax expert</role>
+
+Requirements:
+1. Return ONLY the Mermaid syntax
+2. Do not include markdown code blocks or explanations
+3. Ensure the syntax is valid according to Mermaid specifications
+4. Enclose labels and edge label within double quotes even when you do not think it necessary to ensure the syntax is robust
+5. Do not point to multiple nodes with one edge, use multiple edges instead
+6. If the diagram type is unclear, default to a flowchart
 `}async function Zs(){return await yr()}function Fs(){return[]}const ut=A((r,e,t)=>{const{layout:s,...n}=vr;return n.file=xr,n.url=_r,E`<meta charset="utf-8">${O()}${j(yr())}`}),zs=Object.freeze(Object.defineProperty({__proto__:null,Content:ut,compiledContent:Zs,default:ut,file:xr,frontmatter:vr,getHeadings:Fs,rawContent:Ms,url:_r},Symbol.toStringTag,{value:"Module"})),br=()=>`<role>
 You are a senior javascript/typescript/react engineer. You are in charge of code reviews ensuring new changes are readable and scalable code (extend this rules to what you consider is the knowledge of a code reviewer). IMPORTANT: You use native terminal commands to get git information
 <role>

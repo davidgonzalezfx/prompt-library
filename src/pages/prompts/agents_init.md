@@ -3,25 +3,61 @@ title: Claude init
 description: create CLAUDE.md file
 tags: ["agents"]
 ---
-Please analyze this codebase and create a CLAUDE.md file, which will be given to future instances of Claude Code to operate in this repository.
+# Task: Analyze Codebase and Create CLAUDE.md
 
-What to add:
+You are analyzing a codebase to create a CLAUDE.md file that will guide future Claude Code instances working in this repository.
 
-1. Commands that will be commonly used, such as how to build, lint, and run tests. Include the necessary commands to develop in this codebase, such as how to run a single test.
-2. High-level code architecture and structure so that future instances can be productive more quickly. Focus on the "big picture" architecture that requires reading multiple files to understand
+## Required Content
 
-Usage notes:
+Include the following in CLAUDE.md:
 
-- If there's already a CLAUDE.md, suggest improvements to it.
-- When you make the initial CLAUDE.md, do not repeat yourself and do not include obvious instructions like "Provide helpful error messages to users", "Write unit tests for all new utilities", "Never include sensitive information (API keys, tokens) in code or commits"
-- Avoid listing every component or file structure that can be easily discovered
-- Don't include generic development practices
-- If there are Cursor rules (in .cursor/rules/ or .cursorrules) or Copilot rules (in .github/copilot-instructions.md), make sure to include the important parts.
-- If there is a README.md, make sure to include the important parts.
-- Do not make up information such as "Common Development Tasks", "Tips for Development", "Support and Documentation" unless this is expressly included in other files that you read.
-- Be sure to prefix the file with the following text:
-```md
+1. **Development Commands**: Essential commands for:
+   - Building the project
+   - Running linters
+   - Running all tests
+   - Running a single test
+   - Any other commands critical to development workflow
+
+2. **High-Level Architecture**: The "big picture" that requires reading multiple files to understand:
+   - Overall system design and architectural patterns
+   - How major components interact
+   - Data flow and control flow between modules
+   - Key abstractions and design decisions
+   - Non-obvious relationships between parts of the codebase
+
+## Analysis Process
+
+1. First, examine existing documentation:
+   - Check for existing CLAUDE.md (suggest improvements if found)
+   - Read README.md and extract important technical details
+   - Check .cursor/rules/ or .cursorrules for Cursor-specific guidance
+   - Check .github/copilot-instructions.md for Copilot-specific guidance
+   - Incorporate relevant content from these files
+
+2. Analyze the codebase structure to understand architecture
+
+3. Identify the actual build/test/lint commands used in this project
+
+## Requirements and Constraints
+
+**MUST include** as the first lines:
+```
 # CLAUDE.md
-
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 ```
+
+**DO NOT include**:
+- Generic best practices (e.g., "write unit tests", "provide helpful errors", "don't commit secrets")
+- Obvious information easily discoverable by exploring files
+- Exhaustive file/folder listings
+- Fabricated sections like "Common Development Tasks", "Tips for Development", "Support and Documentation" unless these explicitly exist in source documentation
+- Repetitive content
+- Basic development practices applicable to any project
+
+**Focus on**:
+- Project-specific, actionable information
+- Non-obvious architectural insights
+- Actual commands found in package.json, Makefile, or other build configurations
+- Information that saves time by preventing the need to read multiple files
+
+Analyze the codebase now and create the CLAUDE.md file.

@@ -1,20 +1,66 @@
-<!DOCTYPE html><meta charset="utf-8"><p>Please analyze this codebase and create a CLAUDE.md file, which will be given to future instances of Claude Code to operate in this repository.</p>
-<p>What to add:</p>
+<!DOCTYPE html><meta charset="utf-8"><h1 id="task-analyze-codebase-and-create-claudemd">Task: Analyze Codebase and Create CLAUDE.md</h1>
+<p>You are analyzing a codebase to create a CLAUDE.md file that will guide future Claude Code instances working in this repository.</p>
+<h2 id="required-content">Required Content</h2>
+<p>Include the following in CLAUDE.md:</p>
 <ol>
-<li>Commands that will be commonly used, such as how to build, lint, and run tests. Include the necessary commands to develop in this codebase, such as how to run a single test.</li>
-<li>High-level code architecture and structure so that future instances can be productive more quickly. Focus on the “big picture” architecture that requires reading multiple files to understand</li>
-</ol>
-<p>Usage notes:</p>
+<li>
+<p><strong>Development Commands</strong>: Essential commands for:</p>
 <ul>
-<li>If there’s already a CLAUDE.md, suggest improvements to it.</li>
-<li>When you make the initial CLAUDE.md, do not repeat yourself and do not include obvious instructions like “Provide helpful error messages to users”, “Write unit tests for all new utilities”, “Never include sensitive information (API keys, tokens) in code or commits”</li>
-<li>Avoid listing every component or file structure that can be easily discovered</li>
-<li>Don’t include generic development practices</li>
-<li>If there are Cursor rules (in .cursor/rules/ or .cursorrules) or Copilot rules (in .github/copilot-instructions.md), make sure to include the important parts.</li>
-<li>If there is a README.md, make sure to include the important parts.</li>
-<li>Do not make up information such as “Common Development Tasks”, “Tips for Development”, “Support and Documentation” unless this is expressly included in other files that you read.</li>
-<li>Be sure to prefix the file with the following text:</li>
+<li>Building the project</li>
+<li>Running linters</li>
+<li>Running all tests</li>
+<li>Running a single test</li>
+<li>Any other commands critical to development workflow</li>
 </ul>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="md"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># CLAUDE.md</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#E1E4E8">This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.</span></span></code></pre>
+</li>
+<li>
+<p><strong>High-Level Architecture</strong>: The “big picture” that requires reading multiple files to understand:</p>
+<ul>
+<li>Overall system design and architectural patterns</li>
+<li>How major components interact</li>
+<li>Data flow and control flow between modules</li>
+<li>Key abstractions and design decisions</li>
+<li>Non-obvious relationships between parts of the codebase</li>
+</ul>
+</li>
+</ol>
+<h2 id="analysis-process">Analysis Process</h2>
+<ol>
+<li>
+<p>First, examine existing documentation:</p>
+<ul>
+<li>Check for existing CLAUDE.md (suggest improvements if found)</li>
+<li>Read README.md and extract important technical details</li>
+<li>Check .cursor/rules/ or .cursorrules for Cursor-specific guidance</li>
+<li>Check .github/copilot-instructions.md for Copilot-specific guidance</li>
+<li>Incorporate relevant content from these files</li>
+</ul>
+</li>
+<li>
+<p>Analyze the codebase structure to understand architecture</p>
+</li>
+<li>
+<p>Identify the actual build/test/lint commands used in this project</p>
+</li>
+</ol>
+<h2 id="requirements-and-constraints">Requirements and Constraints</h2>
+<p><strong>MUST include</strong> as the first lines:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span># CLAUDE.md</span></span>
+<span class="line"><span>This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.</span></span></code></pre>
+<p><strong>DO NOT include</strong>:</p>
+<ul>
+<li>Generic best practices (e.g., “write unit tests”, “provide helpful errors”, “don’t commit secrets”)</li>
+<li>Obvious information easily discoverable by exploring files</li>
+<li>Exhaustive file/folder listings</li>
+<li>Fabricated sections like “Common Development Tasks”, “Tips for Development”, “Support and Documentation” unless these explicitly exist in source documentation</li>
+<li>Repetitive content</li>
+<li>Basic development practices applicable to any project</li>
+</ul>
+<p><strong>Focus on</strong>:</p>
+<ul>
+<li>Project-specific, actionable information</li>
+<li>Non-obvious architectural insights</li>
+<li>Actual commands found in package.json, Makefile, or other build configurations</li>
+<li>Information that saves time by preventing the need to read multiple files</li>
+</ul>
+<p>Analyze the codebase now and create the CLAUDE.md file.</p>
